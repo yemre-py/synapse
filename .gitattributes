@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
-* text=auto
+*.go linguist-detectable=true
+*.js linguist-detectable=true
+*.ts linguist-detectable=true
+*.jsx linguist-detectable=true
+*.tsx linguist-detectable=true

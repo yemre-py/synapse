@@ -57,14 +57,14 @@ const MatrixCalculator = () => {
 
       if (!response.ok) {
         const errorText = await response.text();
-        throw new Error(`HTTP hatasý: ${response.status} - ${errorText}`);
+        throw new Error(`HTTP error: ${response.status} - ${errorText}`);
       }
 
       const text = await response.text();
       const data = JSON.parse(text);
       setResult(data.determinant);
     } catch (error) {
-      console.error("Hata:", error);
+      console.error("Error:", error);
     }
   };
 
@@ -72,22 +72,22 @@ const MatrixCalculator = () => {
     <Container maxWidth="lg">
       <Box sx={{ my: 4 }}>
         <Typography variant="h3" component="h1" gutterBottom>
-          Determinant Hesaplama
+          Determinant Calculator
         </Typography>
         <Button
           variant="outlined"
           onClick={() => navigate("/linealg/matrix")}
           sx={{ mb: 3 }}
         >
-          Geri Dön
+          Go Back
         </Button>
         <Box component="form" onSubmit={calculateDeterminant} sx={{ mt: 3 }}>
           <FormControl sx={{ minWidth: 120, mb: 3 }}>
-            <InputLabel>Matris Boyutu</InputLabel>
+            <InputLabel>Matrix Size</InputLabel>
             <Select
               value={size}
               onChange={handleSizeChange}
-              label="Matris Boyutu"
+              label="Matrix Size"
             >
               {[2, 3, 4, 5].map((num) => (
                 <MenuItem key={num} value={num}>
@@ -122,7 +122,7 @@ const MatrixCalculator = () => {
           </Paper>
 
           <Button type="submit" variant="contained" color="primary">
-            Determinantý Hesapla
+            Calculate Determinant
           </Button>
 
           {result !== null && (

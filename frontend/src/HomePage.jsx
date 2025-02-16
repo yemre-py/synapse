@@ -11,12 +11,12 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
-      <h1>Matris Hesaplama Uygulaması</h1>
+      <h1>Matris Hesaplama UygulamasÄ±</h1>
       {!showMatrixCalculator ? (
         <div>
-          <p>Matris işlemlerine başlamak için aşağıdaki butona tıklayın:</p>
+          <p>Matris iÅŸlemlerine baÅŸlamak iÃ§in aÅŸaÄŸÄ±daki butona tÄ±klayÄ±n:</p>
           <button onClick={handleStartMatrixCalculation}>
-            Matris Hesaplamaya Başla
+            Matris Hesaplamaya BaÅŸla
           </button>
         </div>
       ) : (
@@ -24,7 +24,7 @@ const HomePage = () => {
           <MatrixCalculator setResult={setResult} />
           {result !== null && (
             <div className="result">
-              <h2>Sonuç: {result}</h2>
+              <h2>SonuÃ§: {result}</h2>
             </div>
           )}
         </div>

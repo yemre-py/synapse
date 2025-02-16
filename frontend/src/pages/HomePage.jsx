@@ -9,14 +9,15 @@ const HomePage = () => {
     <Container maxWidth="lg">
       <Box sx={{ my: 4 }}>
         <Typography variant="h3" component="h1" gutterBottom>
-          Lineer Cebir Hesaplayıcısı
+          Linear Algebra Calculator
         </Typography>
         <Paper elevation={3} sx={{ p: 4, mt: 4 }}>
           <Typography variant="h5" gutterBottom>
-            Hoş Geldiniz!
+            Welcome!
           </Typography>
           <Typography variant="body1" sx={{ mb: 4 }}>
-            Bu uygulama ile lineer cebir işlemlerini kolayca yapabilirsiniz.
+            With this application, you can easily perform linear algebra
+            operations.
           </Typography>
           <Button
             variant="contained"
@@ -25,7 +26,7 @@ const HomePage = () => {
             onClick={() => navigate("/linealg")}
             sx={{ mt: 2 }}
           >
-            Başla
+            Start
           </Button>
         </Paper>
       </Box>

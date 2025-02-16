@@ -9,7 +9,7 @@ const LinealgebraPage = () => {
     <Container maxWidth="lg">
       <Box sx={{ my: 4 }}>
         <Typography variant="h3" component="h1" gutterBottom>
-          Lineer Cebir Ýþlemleri
+          Linear Algebra Operations
         </Typography>
         <Grid container spacing={3} sx={{ mt: 2 }}>
           <Grid item xs={12} md={6}>
@@ -24,17 +24,17 @@ const LinealgebraPage = () => {
               }}
             >
               <Typography variant="h5" gutterBottom>
-                Matris Ýþlemleri
+                Matrix Operations
               </Typography>
               <Typography variant="body1" sx={{ mb: 3 }}>
-                Matris hesaplamalarý için týklayýn.
+                Click here for matrix calculations.
               </Typography>
               <Button
                 variant="contained"
                 color="primary"
                 onClick={() => navigate("/linealg/matrix")}
               >
-                Matris Ýþlemlerine Git
+                Go to Matrix Operations
               </Button>
             </Paper>
           </Grid>
@@ -51,13 +51,13 @@ const LinealgebraPage = () => {
               }}
             >
               <Typography variant="h5" gutterBottom>
-                Vektör Ýþlemleri
+                Vector Operations
               </Typography>
               <Typography variant="body1" sx={{ mb: 3 }}>
-                Yakýnda eklenecek...
+                Coming soon...
               </Typography>
               <Button variant="contained" color="primary" disabled>
-                Yapým Aþamasýnda
+                Under Development
               </Button>
             </Paper>
           </Grid>

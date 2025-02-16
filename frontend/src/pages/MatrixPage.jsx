@@ -9,7 +9,7 @@ const MatrixPage = () => {
     <Container maxWidth="lg">
       <Box sx={{ my: 4 }}>
         <Typography variant="h3" component="h1" gutterBottom>
-          Matris Ýþlemleri
+          Matrix Operations
         </Typography>
         <Grid container spacing={3} sx={{ mt: 2 }}>
           <Grid item xs={12} md={6}>
@@ -24,17 +24,17 @@ const MatrixPage = () => {
               }}
             >
               <Typography variant="h5" gutterBottom>
-                Determinant Hesaplama
+                Determinant Calculator
               </Typography>
               <Typography variant="body1" sx={{ mb: 3 }}>
-                Matrisin determinantýný hesaplayýn.
+                Calculate the determinant of a matrix.
               </Typography>
               <Button
                 variant="contained"
                 color="primary"
                 onClick={() => navigate("/linealg/matrix/determinant")}
               >
-                Determinant Hesapla
+                Calculate Determinant
               </Button>
             </Paper>
           </Grid>
@@ -51,13 +51,13 @@ const MatrixPage = () => {
               }}
             >
               <Typography variant="h5" gutterBottom>
-                Matris Çarpýmý
+                Matrix Multiplication
               </Typography>
               <Typography variant="body1" sx={{ mb: 3 }}>
-                Yakýnda eklenecek...
+                Coming soon...
               </Typography>
               <Button variant="contained" color="primary" disabled>
-                Yapým Aþamasýnda
+                Under Development
               </Button>
             </Paper>
           </Grid>
